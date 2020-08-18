@@ -5,12 +5,13 @@
 
 Building 🍣 a GraphQL Server with Go.
 
-## command
+## commands
 
 ```shell script
 go get github.com/99designs/gqlgen@v0.11.3
 go run github.com/99designs/gqlgen init
 go run github.com/99designs/gqlgen generate
+docker run --name mysql -e MYSQL_ROOT_PASSWORD=test -e MYSQL_DATABASE=test -d mysql:latest
 ```
 
 ## installation
@@ -25,10 +26,12 @@ go mod download
 go run main.go
 ```
 
+*go to http://localhost:8080/*
+
 ## documents
 
-- [graphql-go Tutorial](https://www.howtographql.com/graphql-go/0-introduction/)
 - [gqlgen](https://gqlgen.com/)
+- [graphql-go Tutorial](https://www.howtographql.com/graphql-go/0-introduction/)
 
 ## license
 
